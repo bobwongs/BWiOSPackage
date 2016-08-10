@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4490EFB1D5AE1D6004C84F9 /* gift_freeed_line_90@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B4490EFA1D5AE1D6004C84F9 /* gift_freeed_line_90@2x.png */; };
 		B45951BA1D59C8EA00EB6E1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B45951B91D59C8EA00EB6E1B /* main.m */; };
 		B45951BD1D59C8EA00EB6E1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B45951BC1D59C8EA00EB6E1B /* AppDelegate.m */; };
 		B45951C31D59C8EA00EB6E1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45951C11D59C8EA00EB6E1B /* Main.storyboard */; };
@@ -14,9 +15,10 @@
 		B45951C81D59C8EA00EB6E1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45951C61D59C8EA00EB6E1B /* LaunchScreen.storyboard */; };
 		B45951D31D59C8EA00EB6E1B /* BWiOSPackageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B45951D21D59C8EA00EB6E1B /* BWiOSPackageTests.m */; };
 		B45951DE1D59C8EA00EB6E1B /* BWiOSPackageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B45951DD1D59C8EA00EB6E1B /* BWiOSPackageUITests.m */; };
-		B45951EC1D59C92D00EB6E1B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B45951EB1D59C92D00EB6E1B /* README.md */; };
 		B45951F51D59CB1300EB6E1B /* BWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B45951F41D59CB1300EB6E1B /* BWBaseViewController.m */; };
 		B45951F91D59CB2900EB6E1B /* BWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B45951F81D59CB2900EB6E1B /* BWHomeViewController.m */; };
+		B45952041D59CFC100EB6E1B /* MyConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = B45952031D59CFC100EB6E1B /* MyConfig.plist */; };
+		B45952071D59D63E00EB6E1B /* gift_purple@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B45952091D59D63E00EB6E1B /* gift_purple@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B4490EFA1D5AE1D6004C84F9 /* gift_freeed_line_90@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gift_freeed_line_90@2x.png"; sourceTree = "<group>"; };
 		B45951B51D59C8EA00EB6E1B /* BWiOSPackage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BWiOSPackage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B45951B91D59C8EA00EB6E1B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B45951BB1D59C8EA00EB6E1B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,6 +59,13 @@
 		B45951F41D59CB1300EB6E1B /* BWBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWBaseViewController.m; sourceTree = "<group>"; };
 		B45951F71D59CB2900EB6E1B /* BWHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWHomeViewController.h; sourceTree = "<group>"; };
 		B45951F81D59CB2900EB6E1B /* BWHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWHomeViewController.m; sourceTree = "<group>"; };
+		B45951FA1D59CBF400EB6E1B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		B45951FB1D59CBF400EB6E1B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		B45951FD1D59CC0300EB6E1B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		B45951FF1D59CC0A00EB6E1B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		B45952031D59CFC100EB6E1B /* MyConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyConfig.plist; sourceTree = "<group>"; };
+		B45952081D59D63E00EB6E1B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zh-Hans"; path = "zh-Hans.lproj/gift_purple@2x.png"; sourceTree = "<group>"; };
+		B459520A1D59D64400EB6E1B /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = "en.lproj/gift_purple@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +122,7 @@
 				B45951C11D59C8EA00EB6E1B /* Main.storyboard */,
 				B45951EE1D59CACD00EB6E1B /* ViewController */,
 				B45951ED1D59CACD00EB6E1B /* Reference */,
+				B45952001D59CC3000EB6E1B /* Resource */,
 				B45951C41D59C8EA00EB6E1B /* Assets.xcassets */,
 				B45951B81D59C8EA00EB6E1B /* Supporting Files */,
 			);
@@ -180,6 +191,32 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		B45952001D59CC3000EB6E1B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B45952011D59CC3000EB6E1B /* Configuration */,
+				B45952021D59CC3000EB6E1B /* Image */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		B45952011D59CC3000EB6E1B /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				B45952031D59CFC100EB6E1B /* MyConfig.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		B45952021D59CC3000EB6E1B /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				B45952091D59D63E00EB6E1B /* gift_purple@2x.png */,
+				B4490EFA1D5AE1D6004C84F9 /* gift_freeed_line_90@2x.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -190,6 +227,7 @@
 				B45951B11D59C8EA00EB6E1B /* Sources */,
 				B45951B21D59C8EA00EB6E1B /* Frameworks */,
 				B45951B31D59C8EA00EB6E1B /* Resources */,
+				B4490EFC1D5B015A004C84F9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -283,7 +321,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4490EFB1D5AE1D6004C84F9 /* gift_freeed_line_90@2x.png in Resources */,
+				B45952041D59CFC100EB6E1B /* MyConfig.plist in Resources */,
 				B45951C81D59C8EA00EB6E1B /* LaunchScreen.storyboard in Resources */,
+				B45952071D59D63E00EB6E1B /* gift_purple@2x.png in Resources */,
 				B45951C51D59C8EA00EB6E1B /* Assets.xcassets in Resources */,
 				B45951C31D59C8EA00EB6E1B /* Main.storyboard in Resources */,
 			);
@@ -305,6 +346,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B4490EFC1D5B015A004C84F9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B45951B11D59C8EA00EB6E1B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -312,7 +369,6 @@
 			files = (
 				B45951F51D59CB1300EB6E1B /* BWBaseViewController.m in Sources */,
 				B45951BD1D59C8EA00EB6E1B /* AppDelegate.m in Sources */,
-				B45951EC1D59C92D00EB6E1B /* README.md in Sources */,
 				B45951F91D59CB2900EB6E1B /* BWHomeViewController.m in Sources */,
 				B45951BA1D59C8EA00EB6E1B /* main.m in Sources */,
 			);
@@ -354,6 +410,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				B45951C21D59C8EA00EB6E1B /* Base */,
+				B45951FA1D59CBF400EB6E1B /* zh-Hans */,
+				B45951FD1D59CC0300EB6E1B /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -362,8 +420,19 @@
 			isa = PBXVariantGroup;
 			children = (
 				B45951C71D59C8EA00EB6E1B /* Base */,
+				B45951FB1D59CBF400EB6E1B /* zh-Hans */,
+				B45951FF1D59CC0A00EB6E1B /* en */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B45952091D59D63E00EB6E1B /* gift_purple@2x.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B45952081D59D63E00EB6E1B /* zh-Hans */,
+				B459520A1D59D64400EB6E1B /* en */,
+			);
+			name = "gift_purple@2x.png";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -540,6 +609,7 @@
 				B45951E41D59C8EA00EB6E1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B45951E51D59C8EA00EB6E1B /* Build configuration list for PBXNativeTarget "BWiOSPackageTests" */ = {
 			isa = XCConfigurationList;
@@ -548,6 +618,7 @@
 				B45951E71D59C8EA00EB6E1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B45951E81D59C8EA00EB6E1B /* Build configuration list for PBXNativeTarget "BWiOSPackageUITests" */ = {
 			isa = XCConfigurationList;
@@ -556,6 +627,7 @@
 				B45951EA1D59C8EA00EB6E1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
