@@ -10,6 +10,7 @@ iOS Project, Package, Continuous Integration
 - iOS ipa包
 - 持续化集成
 - Reference
+- 经验总结
 - Follow Me
 
 ## iOS Xcode Project
@@ -69,9 +70,11 @@ iOS Project, Package, Continuous Integration
   - Package, Denominate ipa file, Move files
   - Back up DSYM
 - 配置参数设计
-  - Configuration
+  - Configuration-Release or Debug
   - 后台环境
+  - Bundle ID
   - 包类型
+  - App Display Name
 - 脚本修改项目配置和项目代码
 - 命令
   - xcodebuild命令
@@ -85,14 +88,61 @@ iOS Project, Package, Continuous Integration
       - build: 构建
       - test: 测试某个scheme，必须和"-scheme"一起使用
       - archive:打包，必须和“-scheme”一起使用
+
   - 获取参数
+
+    - $1、$2。。。、$n,n代表参数编号，$0为第一个参数，在此为脚本的路径，$#获取参数个数
+
+      ```
+      param1=$1
+      param2=$2
+      ```
+
   - 文件操作
     - 查找文件
+
+      - 命令：find
+
     - 修改文件
       - 修改文件名
+
+        命令：mv（move files）
+
+        ```
+        mv file.txt new_file.txt  # 带上文件格式
+        mv directory new_directory  # 修改目录名
+        ```
+
       - 查找和修改文件内容
+
+        命令：sed（stream editor）
+
+        ```
+        sed -i ".tmp" "/words_to_find_which_line/s/replaced_word/new_word/" file_path
+        参数说明
+          -i：编辑过程中生成临时拷贝文件，修改完成后替换原来的文件
+          .tmp：临时文件名称
+          words_to_find_which_line：通过文本找到需要修改的目标文本属于哪一行
+          s：替换操作
+          replaced_word：被替换的文本
+          new_word：新文本
+        ```
+
     - 移除文件
-    - 移动文件
+
+      命令：rm（remove）
+
+      ```
+
+      ```
+
+    - 移动文件：mv（move files）
+
+      ```
+
+      ```
+
+      ​
 - Reference：man xcodebuild
 
 ## iOS ipa包
@@ -133,6 +183,10 @@ system on their machine.
 构建iOS持续集成平台（一）——自动化构建和依赖管理：http://www.infoq.com/cn/articles/build-ios-continuous-integration-platform-part1/
 
 xcodebuild manual
+
+## 经验总结
+
+- Mac OS Terminal中的Shell脚本命令操作后不可以撤销
 
 ## Follow Me
 

@@ -19,6 +19,7 @@
 		B45951F91D59CB2900EB6E1B /* BWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B45951F81D59CB2900EB6E1B /* BWHomeViewController.m */; };
 		B45952041D59CFC100EB6E1B /* MyConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = B45952031D59CFC100EB6E1B /* MyConfig.plist */; };
 		B45952071D59D63E00EB6E1B /* gift_purple@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B45952091D59D63E00EB6E1B /* gift_purple@2x.png */; };
+		B4A6AE511D5C9522009E15BF /* BWNetworkKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A6AE501D5C9522009E15BF /* BWNetworkKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,9 @@
 		B45952031D59CFC100EB6E1B /* MyConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyConfig.plist; sourceTree = "<group>"; };
 		B45952081D59D63E00EB6E1B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zh-Hans"; path = "zh-Hans.lproj/gift_purple@2x.png"; sourceTree = "<group>"; };
 		B459520A1D59D64400EB6E1B /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = "en.lproj/gift_purple@2x.png"; sourceTree = "<group>"; };
+		B4A6AE4D1D5C94C5009E15BF /* BWiOSPackage.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BWiOSPackage.pch; sourceTree = "<group>"; };
+		B4A6AE4F1D5C9522009E15BF /* BWNetworkKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWNetworkKit.h; sourceTree = "<group>"; };
+		B4A6AE501D5C9522009E15BF /* BWNetworkKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWNetworkKit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,7 @@
 				B45951BC1D59C8EA00EB6E1B /* AppDelegate.m */,
 				B45951C11D59C8EA00EB6E1B /* Main.storyboard */,
 				B45951EE1D59CACD00EB6E1B /* ViewController */,
+				B4A6AE4E1D5C9501009E15BF /* Network */,
 				B45951ED1D59CACD00EB6E1B /* Reference */,
 				B45952001D59CC3000EB6E1B /* Resource */,
 				B45951C41D59C8EA00EB6E1B /* Assets.xcassets */,
@@ -130,6 +135,7 @@
 		B45951B81D59C8EA00EB6E1B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B4A6AE4D1D5C94C5009E15BF /* BWiOSPackage.pch */,
 				B45951B91D59C8EA00EB6E1B /* main.m */,
 				B45951C91D59C8EA00EB6E1B /* Info.plist */,
 				B45951C61D59C8EA00EB6E1B /* LaunchScreen.storyboard */,
@@ -213,6 +219,15 @@
 				B4490EFA1D5AE1D6004C84F9 /* gift_freeed_line_90@2x.png */,
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		B4A6AE4E1D5C9501009E15BF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B4A6AE4F1D5C9522009E15BF /* BWNetworkKit.h */,
+				B4A6AE501D5C9522009E15BF /* BWNetworkKit.m */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,6 +382,7 @@
 			files = (
 				B45951F51D59CB1300EB6E1B /* BWBaseViewController.m in Sources */,
 				B45951BD1D59C8EA00EB6E1B /* AppDelegate.m in Sources */,
+				B4A6AE511D5C9522009E15BF /* BWNetworkKit.m in Sources */,
 				B45951F91D59CB2900EB6E1B /* BWHomeViewController.m in Sources */,
 				B45951BA1D59C8EA00EB6E1B /* main.m in Sources */,
 			);
@@ -522,6 +538,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = BWiOSPackage/BWiOSPackage.pch;
 				INFOPLIST_FILE = BWiOSPackage/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -535,6 +552,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Blue Moon ( China ) Co., Ltd.";
+				GCC_PREFIX_HEADER = BWiOSPackage/BWiOSPackage.pch;
 				INFOPLIST_FILE = BWiOSPackage/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
