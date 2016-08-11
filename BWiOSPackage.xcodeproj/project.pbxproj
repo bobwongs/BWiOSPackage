@@ -54,7 +54,6 @@
 		B45951D91D59C8EA00EB6E1B /* BWiOSPackageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BWiOSPackageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B45951DD1D59C8EA00EB6E1B /* BWiOSPackageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BWiOSPackageUITests.m; sourceTree = "<group>"; };
 		B45951DF1D59C8EA00EB6E1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B45951EB1D59C92D00EB6E1B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		B45951F31D59CB1300EB6E1B /* BWBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWBaseViewController.h; sourceTree = "<group>"; };
 		B45951F41D59CB1300EB6E1B /* BWBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWBaseViewController.m; sourceTree = "<group>"; };
 		B45951F71D59CB2900EB6E1B /* BWHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWHomeViewController.h; sourceTree = "<group>"; };
@@ -116,7 +115,6 @@
 		B45951B71D59C8EA00EB6E1B /* BWiOSPackage */ = {
 			isa = PBXGroup;
 			children = (
-				B45951EB1D59C92D00EB6E1B /* README.md */,
 				B45951BB1D59C8EA00EB6E1B /* AppDelegate.h */,
 				B45951BC1D59C8EA00EB6E1B /* AppDelegate.m */,
 				B45951C11D59C8EA00EB6E1B /* Main.storyboard */,
@@ -527,7 +525,7 @@
 				INFOPLIST_FILE = BWiOSPackage/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bws.BWiOSPackage;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.bluemoon.itteam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -536,10 +534,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Blue Moon ( China ) Co., Ltd.";
 				INFOPLIST_FILE = BWiOSPackage/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bws.BWiOSPackage;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.bluemoon.itteam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
