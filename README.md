@@ -122,14 +122,21 @@ iOS Project, Package, Continuous Integration
         命令：sed（stream editor）
 
         ```
-        sed -i ".tmp" "/words_to_find_which_line/s/replaced_word/new_word/" file_path
-        参数说明
-          -i：编辑过程中生成临时拷贝文件，修改完成后替换原来的文件
-          .tmp：临时文件名称
-          words_to_find_which_line：通过文本找到需要修改的目标文本属于哪一行
-          s：替换操作
-          replaced_word：被替换的文本
-          new_word：新文本
+        替换指定文本
+          sed -i ".tmp" "/words_to_find_which_line/s/replaced_word/new_word/" file_path
+          参数说明
+            -i：编辑过程中生成临时拷贝文件，修改完成后替换原来的文件
+            .tmp：临时文件名称
+            words_to_find_which_line：通过文本找到需要修改的目标文本属于哪一行
+            s：替换操作
+            replaced_word：被替换的文本
+            new_word：新文本
+        替换目标位置文本
+          sed -i ".tmp" "/words_to_find_which_line/s/regular_expression/new_word/" file_path
+          示例
+            sed -i ".tmp" "/kEnvironment/s/=.*/= new_tag;/" file_path
+            说明
+              .*：正则表达式规则，“.”表示任意字符，“*”表示任意长度
         ```
 
     - 移除文件
