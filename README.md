@@ -1,6 +1,10 @@
+<center> ![head](README/head.png)</center>
+
+
+
 # BWiOSPackage
 
-iOS Project, Package, Continuous Integration
+iOS Continuous Integration
 
 ## Contents
 
