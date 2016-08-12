@@ -14,19 +14,23 @@ iOS Project, Package, Continuous Integration
 - Follow Me
 
 ## iOS Xcode Project
-- Workspace
+- Workspace  
+
   简单来说，Workspace就是一个容器，在该容器中可以存放多个你创建的Xcode Project， 以及其他的项目中需要使用到的文件。使用Workspace的好处有，1),扩展项目的可视域，即可以在多个项目之间跳转，重构，一个项目可以使用另一个项目的输出。Workspace会负责各个Project之间提供各种相互依赖的关系;2),多个项目之间共享Build目录。
 
-- Project
+- Project  
+
   指一个项目，该项目会负责管理生成一个或者多个软件产品的全部文件和配置，一个Project可以包含多个Target。
 
-- Target
+- Target  
+
   一个Target是指在一个Project中构建的一个产品，它包含了构建该产品的所有文件，以及如何构建该产品的配置。
 
-- Scheme
+- Scheme  
+
   一个定义好构建过程的Target成为一个Scheme。可在Scheme中定义的Target的构建过程有：Build/Run/Test/Profile/Analyze/Archive
 
-- Build Setting
+- Build Setting  
 
   配置产品的Build设置，比方说，使用哪个Architectures？使用哪个版本的SDK？。在Xcode Project中，有Project级别的Build Setting，也有Target级别的Build Setting。Build一个产品时一定是针对某个Target的，因此，XCode中总是优先选择Target的Build Setting，如果Target没有配置，则会使用Project的Build Setting。
 
@@ -39,24 +43,24 @@ iOS Project, Package, Continuous Integration
 
 ## Xcode打包
 - 打包机制
-  - 流程
+  - 流程  
     xcodebuild -> Package；
 
-- xcodebuild
-  - 流程细节
+- xcodebuild  
+  - 流程细节  
     Check dependencies（检查项目配置，如Code Sign） -> Preprocessor -> Compile -> Link -> Copy Resource、Compile Xib、CompileStoryboard、CompileAssetCatalog -> Generate DSYM File -> ProcessProductPackaging -> Code Signing（需要访问钥匙串信息） -> Validate -> Result；
-  - Result
-    .app和.DSYM；
+  - Result  
+    .app和.DSYM；
   - Code Signing
     - Code Signing Identity
     - Provisioning Profile
   - Reference：Terminal执行命令，查看输出信息
 
-- Package
+- Package  
 
   - 把.app文件放入命名为“Payload”的新建文件夹中，对“Payload”文件夹进行压缩，对压缩生成的文件修改后缀名为.ipa，这样，就能生成有效的ipa包了；
 
-- Xcode可视化打包
+- Xcode可视化打包  
 
   Select Generic iOS Device -> Xcode Menu Bar - Product -> Archive -> Select Package Type -> Select Provisoning Profile -> Export ipa or Upload to App Store
 
@@ -133,16 +137,16 @@ iOS Project, Package, Continuous Integration
       命令：rm（remove）
 
       ```
-
+      rm path/file.format  # 移除文件
+      rm -r path/directory  # 移除目录，-r命令可以删除非空目录
       ```
 
     - 移动文件：mv（move files）
 
       ```
-
+      mv file_path/file.format new_file_path/new_file.format
       ```
 
-      ​
 - Reference：man xcodebuild
 
 ## iOS ipa包
