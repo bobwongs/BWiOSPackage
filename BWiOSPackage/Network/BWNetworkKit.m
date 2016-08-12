@@ -8,7 +8,7 @@
 
 #import "BWNetworkKit.h"
 
-const NSInteger kEnvironment = 5;
+const NSInteger kEnvironment = 0;  // 0: Production, 1: Test1, 2: Test2
 
 @implementation BWNetworkKit
 

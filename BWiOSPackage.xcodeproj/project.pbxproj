@@ -66,6 +66,7 @@
 		B45952031D59CFC100EB6E1B /* MyConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyConfig.plist; sourceTree = "<group>"; };
 		B45952081D59D63E00EB6E1B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zh-Hans"; path = "zh-Hans.lproj/gift_purple@2x.png"; sourceTree = "<group>"; };
 		B459520A1D59D64400EB6E1B /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = "en.lproj/gift_purple@2x.png"; sourceTree = "<group>"; };
+		B480ADDF1D5D6D5D0057B1D6 /* package.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = package.sh; sourceTree = SOURCE_ROOT; };
 		B4A6AE4D1D5C94C5009E15BF /* BWiOSPackage.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BWiOSPackage.pch; sourceTree = "<group>"; };
 		B4A6AE4F1D5C9522009E15BF /* BWNetworkKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWNetworkKit.h; sourceTree = "<group>"; };
 		B4A6AE501D5C9522009E15BF /* BWNetworkKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWNetworkKit.m; sourceTree = "<group>"; };
@@ -135,6 +136,7 @@
 		B45951B81D59C8EA00EB6E1B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B480ADDF1D5D6D5D0057B1D6 /* package.sh */,
 				B4A6AE4D1D5C94C5009E15BF /* BWiOSPackage.pch */,
 				B45951B91D59C8EA00EB6E1B /* main.m */,
 				B45951C91D59C8EA00EB6E1B /* Info.plist */,

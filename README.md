@@ -73,13 +73,20 @@ iOS Project, Package, Continuous Integration
   - xcodebuild
   - Package, Denominate ipa file, Move files
   - Back up DSYM
+
 - 配置参数设计
   - Configuration-Release or Debug
   - 后台环境
-  - Bundle ID
   - 包类型
+    - App Store
+    - InHouse
+    - Adhoc
+  - Bundle ID
+  - App版本号
   - App Display Name
+
 - 脚本修改项目配置和项目代码
+
 - 命令
   - xcodebuild命令
     - 可构建的对象
@@ -125,8 +132,8 @@ iOS Project, Package, Continuous Integration
         替换指定文本
           sed -i ".tmp" "/words_to_find_which_line/s/replaced_word/new_word/" file_path
           参数说明
-            -i：编辑过程中生成临时拷贝文件，修改完成后替换原来的文件
-            .tmp：临时文件名称
+            -i：备份原文件，修改文件的操作不可逆，如果需要查看原来的内容，则可以在备份文件中进行查看，此脚本执行之后会生成一个.tmp文件，谨慎进行移除
+            .tmp：备份的原文件名称
             words_to_find_which_line：通过文本找到需要修改的目标文本属于哪一行
             s：替换操作
             replaced_word：被替换的文本
@@ -134,7 +141,7 @@ iOS Project, Package, Continuous Integration
         替换目标位置文本
           sed -i ".tmp" "/words_to_find_which_line/s/regular_expression/new_word/" file_path
           示例
-            sed -i ".tmp" "/kEnvironment/s/=.*/= new_tag;/" file_path
+            sed -i ".tmp" "/kEnvironment/s/=.*;/= new_tag;/" file_path  # 更换kEnvironment的值，不修改其余部分，如后面对代码的注释
             说明
               .*：正则表达式规则，“.”表示任意字符，“*”表示任意长度
         ```
@@ -154,7 +161,14 @@ iOS Project, Package, Continuous Integration
       mv file_path/file.format new_file_path/new_file.format
       ```
 
-- Reference：man xcodebuild
+- Reference
+
+  - 终端查看对应的Manuel手册
+
+- 待完善
+
+  - 脚本读取和修改Xcode工程文件信息，如版本号、包类型等；
+  - 脚本中的参数编写需要设计得更加灵活；
 
 ## iOS ipa包
 - ipa包的解压
@@ -198,6 +212,7 @@ xcodebuild manual
 ## 经验总结
 
 - Mac OS Terminal中的Shell脚本命令操作后不可以撤销
+- Xcode Command+B是按照当前设定的Scheme进行Build，而不是固定选择Release进行Build
 
 ## Follow Me
 
