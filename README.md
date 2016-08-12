@@ -167,8 +167,14 @@ iOS Project, Package, Continuous Integration
 
 - 待完善
 
-  - 脚本读取和修改Xcode工程文件信息，如版本号、包类型等；
+  - 脚本读取和修改Xcode工程文件信息，如版本号、包类型、授权文件等；
   - 脚本中的参数编写需要设计得更加灵活；
+
+- 学习方向
+
+  - 正则表达式
+  - Shell Script
+  - 操作文本能力的提高
 
 ## iOS ipa包
 - ipa包的解压

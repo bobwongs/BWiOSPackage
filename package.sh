@@ -1,5 +1,6 @@
 
 # iOS Package Script
+# Author: BobWong
 
 # Shell终端打包示例：./package.sh 0
 
