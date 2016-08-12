@@ -12,7 +12,8 @@ iOS Continuous Integration
 - Xcode打包
 - 脚本打包
 - iOS ipa包
-- 持续化集成
+- 持续集成
+- 自动化测试
 - Reference
 - 经验总结
 - Follow Me
@@ -89,8 +90,6 @@ iOS Continuous Integration
   - App版本号
   - App Display Name
 
-- 脚本修改项目配置和项目代码
-
 - 命令
   - xcodebuild命令
     - 可构建的对象
@@ -165,6 +164,10 @@ iOS Continuous Integration
       mv file_path/file.format new_file_path/new_file.format
       ```
 
+- 项目的脚本
+
+  - 本项目Shell脚本放置在工程根目录下，脚本文件为package.sh；
+
 - Reference
 
   - 终端查看对应的Manuel手册
@@ -179,6 +182,7 @@ iOS Continuous Integration
   - 正则表达式
   - Shell Script
   - 操作文本能力的提高
+  - Python脚本的学习
 
 ## iOS ipa包
 - ipa包的解压
@@ -195,29 +199,44 @@ iOS Continuous Integration
 
   > 如微信等知名应用的ipa包；
 
-## 持续化集成
+## 持续集成
+
+- 持续集成
+
+  - 编译，发布，自动化测试
+  - 目的
+    - 减少风险
+    - 减少重复过程
 
 - 自动化构建
 
-自动化构建的的首要前提  
+  - 自动化构建的的首要前提  
 
-Anyone should be able to bring in a virgin machine, check the sources 
-out of the repository, issue a single command, and have a running 
-system on their machine.
-自动化构建的的首要前提是有一个支持自动化构建的命令行工具，可以让开发人员可以通过一个简单的命令运行当前项目。
+    Anyone should be able to bring in a virgin machine, check the sources out of the repository, issue a single command, and have a running system on their machine.
 
-- 命令行工具
+    自动化构建的的首要前提是有一个支持自动化构建的命令行工具，可以让开发人员可以通过一个简单的命令运行当前项目。
 
-自动化构建的命令行工具比持续集成的概念要诞生得早很多，几十年前，Unix世界就已经有了Make，而Java世界有Ant，Maven，以及当前最流行的Gradle，.Net世界则有Nant和MSBuild。作为以GUI和命令行操作结合的完美性著称的苹果公司来说，当然也不会忘记为自己的封闭的iOS系统提供开发环境下命令行编译工具：xcodebuild
+  - 命令行工具
 
-- 持续化集成平台
-  - Jenkins
+    自动化构建的命令行工具比持续集成的概念要诞生得早很多，几十年前，Unix世界就已经有了Make，而Java世界有Ant，Maven，以及当前最流行的Gradle，.Net世界则有Nant和MSBuild。作为以GUI和命令行操作结合的完美性著称的苹果公司来说，当然也不会忘记为自己的封闭的iOS系统提供开发环境下命令行编译工具：xcodebuild
+
+- 持续集成平台Jenkins
+
+- 待研究，下载不了Jenkins
+
+## 自动化测试
+
+- 自动化测试
 
 ## Reference
 
 构建iOS持续集成平台（一）——自动化构建和依赖管理：http://www.infoq.com/cn/articles/build-ios-continuous-integration-platform-part1/
 
-xcodebuild manual
+一步一步构建iOS持续集成:Jenkins+GitLab+蒲公英+FTP：http://www.jianshu.com/p/c69deb29720d
+
+Jenkins：https://jenkins.io/index.html
+
+Manual：xcodebuild
 
 ## 经验总结
 
