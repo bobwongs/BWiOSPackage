@@ -6,6 +6,8 @@
 
 iOS Continuous Integration
 
+Github：https://github.com/bobwongs/BWiOSPackage
+
 ## Contents
 
 - iOS Xcode Project
@@ -233,6 +235,8 @@ iOS Continuous Integration
 构建iOS持续集成平台（一）——自动化构建和依赖管理：http://www.infoq.com/cn/articles/build-ios-continuous-integration-platform-part1/
 
 一步一步构建iOS持续集成:Jenkins+GitLab+蒲公英+FTP：http://www.jianshu.com/p/c69deb29720d
+
+手把手教你利用Jenkins持续集成iOS项目：http://gold.xitu.io/post/57b01d50128fe10055bbc6d5
 
 Jenkins：https://jenkins.io/index.html
 
