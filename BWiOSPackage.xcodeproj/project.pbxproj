@@ -19,6 +19,7 @@
 		B45951F91D59CB2900EB6E1B /* BWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B45951F81D59CB2900EB6E1B /* BWHomeViewController.m */; };
 		B45952041D59CFC100EB6E1B /* MyConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = B45952031D59CFC100EB6E1B /* MyConfig.plist */; };
 		B45952071D59D63E00EB6E1B /* gift_purple@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B45952091D59D63E00EB6E1B /* gift_purple@2x.png */; };
+		B47A37DB1E04D18000E130AA /* package_research.sh in Resources */ = {isa = PBXBuildFile; fileRef = B47A37DA1E04D18000E130AA /* package_research.sh */; };
 		B4A6AE511D5C9522009E15BF /* BWNetworkKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A6AE501D5C9522009E15BF /* BWNetworkKit.m */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		B45952031D59CFC100EB6E1B /* MyConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyConfig.plist; sourceTree = "<group>"; };
 		B45952081D59D63E00EB6E1B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zh-Hans"; path = "zh-Hans.lproj/gift_purple@2x.png"; sourceTree = "<group>"; };
 		B459520A1D59D64400EB6E1B /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = "en.lproj/gift_purple@2x.png"; sourceTree = "<group>"; };
+		B47A37DA1E04D18000E130AA /* package_research.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = package_research.sh; sourceTree = SOURCE_ROOT; };
 		B480ADDF1D5D6D5D0057B1D6 /* package.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = package.sh; sourceTree = SOURCE_ROOT; };
 		B480ADE11D5DA7190057B1D6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		B4A6AE4D1D5C94C5009E15BF /* BWiOSPackage.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BWiOSPackage.pch; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				B480ADDF1D5D6D5D0057B1D6 /* package.sh */,
+				B47A37DA1E04D18000E130AA /* package_research.sh */,
 				B480ADE11D5DA7190057B1D6 /* README.md */,
 				B4A6AE4D1D5C94C5009E15BF /* BWiOSPackage.pch */,
 				B45951B91D59C8EA00EB6E1B /* main.m */,
@@ -345,6 +348,7 @@
 				B45952071D59D63E00EB6E1B /* gift_purple@2x.png in Resources */,
 				B45951C51D59C8EA00EB6E1B /* Assets.xcassets in Resources */,
 				B45951C31D59C8EA00EB6E1B /* Main.storyboard in Resources */,
+				B47A37DB1E04D18000E130AA /* package_research.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

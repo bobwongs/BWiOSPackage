@@ -46,3 +46,6 @@ zip -r BWiOSPackage.ipa Payload
 rm -r Payload
 
 echo "=======打包完成======="
+
+# 备注
+# Shell脚本的语法中不要在“=”号两边使用空格，会解析不了脚本
