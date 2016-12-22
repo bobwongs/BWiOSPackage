@@ -82,15 +82,22 @@ Github：https://github.com/bobwongs/BWiOSPackage
   - Back up DSYM
 
 - 配置参数设计
-  - Configuration-Release or Debug
   - 后台环境
+  - 后台环境在App内的显示标识
   - 包类型
     - App Store
     - InHouse
     - Adhoc
-  - Bundle ID
   - App版本号
-  - App Display Name
+  - Build号
+  - Bundle ID
+  - Configuration-Release or Debug（一般不用设置）
+
+- Package, Denominate ipa file, Move files
+
+  - Denominate ipa file
+    - 格式：AppName Date Time Environment PackageType Version(BuildCode)
+    - 示例：AppName 20161130 144130 生产环境 企业分发 版本号(Build号)
 
 - 命令
   - xcodebuild命令
