@@ -2,7 +2,7 @@
 # iOS Package Script
 # Author: BobWong
 
-# Shell终端打包示例：./package.sh 0 1
+# Shell终端打包示例：./package.sh 后端环境 Build号，使用示例，./package.sh 0 100，0代表生产环境
 
 # ---------- 参数配置 ----------
 
