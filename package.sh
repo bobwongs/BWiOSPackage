@@ -63,7 +63,7 @@ echo "=============ipa name is $ipa_name============"
 # xcodebuild
 # clean
 xcodebuild clean
-rm -r $path_build
+#rm -r $path_build  # 不需要移除build目录
 
 # build
 xcodebuild
@@ -71,7 +71,7 @@ xcodebuild
 
 # Package
 # Package，包放置到桌面Packages目录
-dir_package=ios_package
+dir_package="ios_package"
 mv $path_build ${HOME}/Desktop/Packages
 
 cd ${HOME}/Desktop/Packages

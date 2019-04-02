@@ -305,7 +305,8 @@
 				TargetAttributes = {
 					B45951B41D59C8EA00EB6E1B = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = NK94TM64KF;
+						DevelopmentTeam = R6L6VZZQ6L;
+						ProvisioningStyle = Manual;
 					};
 					B45951CD1D59C8EA00EB6E1B = {
 						CreatedOnToolsVersion = 7.3;
@@ -547,16 +548,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				DEVELOPMENT_TEAM = NK94TM64KF;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = R6L6VZZQ6L;
 				GCC_PREFIX_HEADER = BWiOSPackage/BWiOSPackage.pch;
 				INFOPLIST_FILE = BWiOSPackage/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.com.bluemoon.itteam;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.bluemoon.bluehouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "79004031-dfaa-4689-a8a6-e4eb3fe1bc21";
-				PROVISIONING_PROFILE_SPECIFIER = inhouse_cn.com.bluemoon.itteam;
+				PROVISIONING_PROFILE = "9a939003-c3ff-4a9c-b736-0c476f27626b";
+				PROVISIONING_PROFILE_SPECIFIER = dev_R6L6VZZQ6L.cn.com.bluemoon.bluehouse_20161223;
 			};
 			name = Debug;
 		};
@@ -565,15 +566,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Blue Moon ( China ) Co., Ltd.";
-				DEVELOPMENT_TEAM = NK94TM64KF;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = R6L6VZZQ6L;
 				GCC_PREFIX_HEADER = BWiOSPackage/BWiOSPackage.pch;
 				INFOPLIST_FILE = BWiOSPackage/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.com.bluemoon.itteam;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.bluemoon.bluehouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "79004031-dfaa-4689-a8a6-e4eb3fe1bc21";
-				PROVISIONING_PROFILE_SPECIFIER = inhouse_cn.com.bluemoon.itteam;
+				PROVISIONING_PROFILE = "9a939003-c3ff-4a9c-b736-0c476f27626b";
+				PROVISIONING_PROFILE_SPECIFIER = dev_R6L6VZZQ6L.cn.com.bluemoon.bluehouse_20161223;
 			};
 			name = Release;
 		};
